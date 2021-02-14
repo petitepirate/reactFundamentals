@@ -1,0 +1,15 @@
+.Pokedex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto 10px auto;
+	width: 80vw;
+	border: 1px dotted black;
+	border-radius: 10px;
+}
+
+.winner {
+	background-color: lightblue;
+}

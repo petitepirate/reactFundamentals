@@ -1,0 +1,7 @@
+.App-container h1 {
+	text-align: center;
+	color: yellow;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: darkblue;
+	font-family: Arial, Helvetica, sans-serif;
+}

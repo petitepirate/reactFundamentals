@@ -1,0 +1,20 @@
+.Pokecard {
+	background-color: white;
+	margin: 20px 20px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 0 0 0 2pt gray;
+	width: 175px;
+	height: 225px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Pokecard h4 {
+	color: rgba(234, 0, 255, 0.897);
+}
+
+.Pokecard p {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
