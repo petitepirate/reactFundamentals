@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Springboard 39.8 React Forms Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Requires UUID - `npm install uuid`
+
+# This project was bootstrapped with [Create React App]
+(https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
