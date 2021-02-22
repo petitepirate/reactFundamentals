@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import uuid from "uuid";
-import axios from "axios";
+import React from "react";
+// import uuid from "uuid";
+// import axios from "axios";
+import useAxios from './hooks/useAxios';
 import PlayingCard from "./PlayingCard";
+import RemoveCardsButton from './RemoveCardsButton';
 import "./PlayingCardList.css";
 
 /* Renders a list of playing cards.
  * Can also add a new card at random. */
 function CardTable() {
-  const [cards, setCards] = useState([]);
-  const addCard = async () => {
-    const response = await axios.get(
-      "https://deckofcardsapi.com/api/deck/new/draw/"
-    );
-    setCards(cards => [...cards, { ...response.data, id: uuid() }]);
-  };
+  const [cards, addCard, removeCards] = useAxios('https://deckofcardsapi.com/api/deck/new/draw');
+
   return (
     <div className="PlayingCardList">
       <h3>Pick a card, any card!</h3>
@@ -25,6 +22,7 @@ function CardTable() {
           <PlayingCard key={cardData.id} front={cardData.cards[0].image} />
         ))}
       </div>
+      <RemoveCardsButton removeCards={removeCards} />
     </div>
   );
 }

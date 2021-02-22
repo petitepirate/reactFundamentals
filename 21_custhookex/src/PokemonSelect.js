@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pokemonList from "./pokemonList";
+import pokemonList from "./PokemonList";
 import { choice } from "./helpers";
 
 /* Select element to choose from common pokemon. */
