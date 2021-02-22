@@ -1,0 +1,9 @@
+.Card {
+	height: 300px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 45%;
+	margin-top: 50px;
+	position: absolute;
+}
